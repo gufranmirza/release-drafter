@@ -18,10 +18,6 @@ The draft change note is constructed based on the available github labels:
 
 ### Semantic versioning labels
 
-- major - Following change needs a major version update
-- minor - Following change needs a minor version update
-- patch - Following change needs a patch version update
-
 ### Other
 
 - skip-changelog - Won't be included in the changelog
