@@ -34,7 +34,7 @@ jobs:
           PRERELEASE_SUFFIX: RC
 
       - name: Create a GitHub release
-        uses: release-drafter/release-drafter@v5
+        uses: release-drafter/release-drafter@v5.21.1
         if: github.ref == 'refs/heads/develop'
         with:
           config-name: release_drafter.yml
@@ -48,7 +48,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GHE_TOKEN }}
 
       - name: Create a GitHub release
-        uses: release-drafter/release-drafter@v5
+        uses: release-drafter/release-drafter@v5.21.1
         if: github.ref == 'refs/heads/main'
         with:
           config-name: release_drafter.yml
