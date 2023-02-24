@@ -33,19 +33,19 @@ jobs:
           RELEASE_BRANCHES: main, main-2.x
           PRERELEASE_SUFFIX: RC
 
-      - name: Create a GitHub release
-        uses: release-drafter/release-drafter@v5.21.1
-        if: github.ref == 'refs/heads/develop'
-        with:
-          config-name: release_drafter.yml
-          tag: ${{ steps.bump_version.outputs.new_tag }}
-          name: Release ${{ steps.bump_version.outputs.new_tag }}
-          version: ${{ steps.bump_version.outputs.new_tag }}
-          publish: true
-          commitish: develop
-          prerelease: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GHE_TOKEN }}
+      # - name: Create a GitHub release
+      #   uses: release-drafter/release-drafter@v5.21.1
+      #   if: github.ref == 'refs/heads/develop'
+      #   with:
+      #     config-name: release_drafter.yml
+      #     tag: ${{ steps.bump_version.outputs.new_tag }}
+      #     name: Release ${{ steps.bump_version.outputs.new_tag }}
+      #     version: ${{ steps.bump_version.outputs.new_tag }}
+      #     publish: false
+      #     commitish: develop
+      #     prerelease: true
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GHE_TOKEN }}
 
       - name: Create a GitHub release
         uses: release-drafter/release-drafter@v5.21.1
