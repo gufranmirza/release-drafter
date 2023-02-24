@@ -25,7 +25,7 @@ jobs:
         id: bump_version
         uses: anothrNick/github-tag-action@1.36.0
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GHE_TOKEN }}
           WITH_V: false
           VERBOSE: true
           DRY_RUN: true
@@ -42,4 +42,4 @@ jobs:
           version: ${{ steps.bump_version.outputs.new_tag }}
           publish: true
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GHE_TOKEN }}
