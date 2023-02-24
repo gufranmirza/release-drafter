@@ -20,9 +20,3 @@ The draft change note is constructed based on the available github labels:
 - major - Following change needs a major version update
 - minor - Following change needs a minor version update
 - patch - Following change needs a patch version update
-
-### Other
-
-- skip-changelog - Won't be included in the changelog
-
-You can find them [here](https://github.com/joelazar/releaser-example/issues/labels) too.
