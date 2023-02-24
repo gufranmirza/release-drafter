@@ -14,9 +14,16 @@ The draft change note is constructed based on the available github labels:
 - bug - Something isn't working
 - chore - Changes that do not relate to a bug or feature
 - feature - New feature or improvement
+- chore - Changes that do not relate to a bug or feature
 
 ### Semantic versioning labels
 
 - major - Following change needs a major version update
 - minor - Following change needs a minor version update
 - patch - Following change needs a patch version update
+
+### Other
+
+- skip-changelog - Won't be included in the changelog
+
+You can find them [here](https://github.com/joelazar/releaser-example/issues/labels) too.
