@@ -14,7 +14,6 @@ The draft change note is constructed based on the available github labels:
 - bug - Something isn't working
 - chore - Changes that do not relate to a bug or feature
 - feature - New feature or improvement
-- chore - Changes that do not relate to a bug or feature
 
 ### Semantic versioning labels
 
