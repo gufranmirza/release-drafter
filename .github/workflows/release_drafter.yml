@@ -3,7 +3,7 @@ name: Release Drafter
 on:
   push:
     branches:
-      - develop
+      - develop*
       - main*
   pull_request:
     # pull_request event is required only for autolabeler
