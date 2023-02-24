@@ -41,7 +41,7 @@ jobs:
           tag: ${{ steps.bump_version.outputs.new_tag }}
           name: Release ${{ steps.bump_version.outputs.new_tag }}
           version: ${{ steps.bump_version.outputs.new_tag }}
-          publish: true
+          publish: false
           commitish: develop
           prerelease: true
         env:
