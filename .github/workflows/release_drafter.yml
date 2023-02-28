@@ -50,6 +50,7 @@ jobs:
       - name: Create a GitHub release
         uses: release-drafter/release-drafter@v5.21.1
         if: github.ref == 'refs/heads/main'
+        if: ${{ (github.ref == 'refs/heads/main') || (github.ref == 'refs/heads/main-2.x') }}
         with:
           config-name: release_drafter.yml
           tag: ${{ steps.bump_version.outputs.new_tag }}
